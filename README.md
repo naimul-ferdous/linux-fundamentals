@@ -157,10 +157,33 @@
 * Check the inode of both **datafile.txt** and **hardlink.txt**  
 * Delete the original file **datafile.txt** and observe the status of the hard link.  
 * Find all .txt files in your home directory. ( use find command. Run find \--help for usage)
+  
+   ```bash
+    # Create a softlink of the file original.txt 
+    ln -s ../original.txt softlink.txt
+    # Create a hardlink of the file datafile.txt 
+    ln ../datafile.txt hardlink.txt
+    # Show the inode of a file 
+    ls -i hardlink.txt
+    # Find all the .txt files in the current directory
+    find . -name "*.txt"
+  ```
+  ![hardlinksoftlink](images/hardlinksoftlink.png)
 
 **Package installation**
 
 * Update repo cache using apt/apt-get  
+     ```bash
+    # Update repo cache 
+    sudo apt update
+  ```
+  ![cacheupdate](images/cacheupdate.png)
+  
 * Install a package named **tree**  
 * Install gcloud CLI tool using apt ( Follow instructions from here: [https://cloud.google.com/sdk/docs/install\#deb](https://cloud.google.com/sdk/docs/install#deb) )
+  
+  ```bash
+    # tree and gloud CLI installed
+  ```
+  ![install](images/install.png)
 
