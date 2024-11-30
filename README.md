@@ -187,3 +187,15 @@
   ```
   ![install](images/install.png)
 
+# instruction for running all the commands from a single file
+```bash
+    # Clone the repo
+    git clone https://github.com/naimul-ferdous/linux-fundamentals.git
+    # Change the directory to linux fundamentals
+    cd linux-fundamentals
+    # Make the file executable
+    chmod +x linux_fundamentals.sh
+    # Run the executable file
+    ./linux_fundamentals.sh
+```
+
